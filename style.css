@@ -2,33 +2,31 @@
 {
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
+    
 }
-body
-{
-    background-color: #c5d1eb;
-    min-height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top:4rem;
 
-}
-/* Define in :root */
 :root{
     --backgroundColor : #c5d1eb;
     --divColor : #aabfee;
-}
-
-:root {
-  --primary: #3498db;
+      --primary: #3498db;
   --secondary: #2ecc71;
   --dark: #2c3e50;
   --light: #ecf0f1;
   --textColor:#2d4a89;
 }
 
-/* Use throughout your CSS */
+body{
+    background-color: var(--backgroundColor);
+    
+}
+.body
+{
+    background-color: #c5d1eb;
+    min-height: 60px;
+    
+    padding: 10px;
+}
+
 .header {
   background-color: var(--primary);
   color: var(--light);
@@ -57,16 +55,18 @@ body
 
 .container
 {
-    position: relative;
+    
     background-color: #fff;
     padding: 25px;
     border-radius: 28px;
-    max-width:380px;
+    max-width:410px;
     width:100%;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     background-image: url(images/bg.png);
     background-size: cover;
+    margin-left: 250px;
+    margin-top: 10px;
 }
 
 header , .logo
@@ -90,7 +90,7 @@ h5{
 
 .container .card-details
 {
-    margin-top: 40px;
+    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -113,7 +113,7 @@ a{
     color: var(--textColor);
 }
 
-body .sideBar{
+ .sideBar{
     background-color: var(--divColor);
     display: flex;
     flex-direction: column;
