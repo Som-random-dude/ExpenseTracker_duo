@@ -1,0 +1,109 @@
+*
+{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body
+{
+    background-color: #c5d1eb;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:4rem;
+
+}
+/* Define in :root */
+:root{
+    --backgroundColor : #c5d1eb;
+    --divColor : #aabfee;
+}
+
+:root {
+  --primary: #3498db;
+  --secondary: #2ecc71;
+  --dark: #2c3e50;
+  --light: #ecf0f1;
+  --textColor:#2d4a89;
+}
+
+/* Use throughout your CSS */
+.header {
+  background-color: var(--primary);
+  color: var(--light);
+}
+
+.button {
+  background-color: var(--secondary);
+  color: var(--dark);
+}
+
+.footer {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+.logo img{
+    width:48px;
+    margin-right: 10px;
+
+}
+
+.chip{
+    width:60px;
+
+}
+
+.container
+{
+    position: relative;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 28px;
+    max-width:380px;
+    width:100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    background-image: url(images/bg.png);
+    background-size: cover;
+}
+
+header , .logo
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h5{
+    color:white;
+    font-weight:400;
+    font-size:16px;
+}
+
+.card-details h6{
+    color: #fff; 
+    font-weight: 400;
+    font-size: 12px; 
+}
+
+.container .card-details
+{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.card-details h5.number
+{
+    font-size:18px;
+    margin-top:4px;
+    letter-spacing: 1px;
+}
+
+.card-details h5.name
+{
+    margin-top: 20px;
+}
